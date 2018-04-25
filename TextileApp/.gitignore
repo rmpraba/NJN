@@ -1,6 +1,6 @@
 /node_modules
 /*.key
-/vendor
+
 /.idea
 /.vscode
 /.vagrant
