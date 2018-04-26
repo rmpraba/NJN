@@ -13,7 +13,8 @@
                 width: 100%;
             }
             #main{
-              height: 61vh;  
+              height: 100vh;  
+              overflow-y: hidden;
             }
 </style>
 <div class="container">
@@ -22,10 +23,10 @@
         @include('includes.header')
     </header>
 
-    <div id="main" class="row">
+    <div id="main" class="row scroll-area">
 
         <!-- sidebar content -->
-        <div id="sidebar" class="col-md-2">
+        <div id="sidebar" class="col-md-4" hidden>
             @include('includes.sidebar')
         </div>
 

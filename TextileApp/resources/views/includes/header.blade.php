@@ -160,7 +160,8 @@
 				<div class="loginmodal-container">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 					<h1>Login to Your Account</h1><br>
-				  <form>
+				  <form action="/login" method="post">
+          <input type="hidden" name="_token" value="{{ csrf_token() }}">
 					<input type="text" name="user" placeholder="Username">
 					<input type="password" name="pass" placeholder="Password">
 					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
@@ -171,35 +172,4 @@
 				</div>
 		</div>
 </div>
-  <!-- <div  class="modal fade" id="myModal" role="dialog">
-    <div  class="modal-dialog">
-      <div style="width: 60%;" class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h1 class="modal-title" align="center">Sign In</h4>
-        </div>
-        <form> 
-        <div class="modal-body">          
-            <table align="center" style="font-size: 20px">             
-            <tr><td>&nbsp</td><td>&nbsp</td>&nbsp<td></tr>
-            <tr><td>UserName</td>
-            <td>&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input style="width: 150px;height: 30px;" type="text" name=""></td>
-            </tr>
-            <tr><td>&nbsp</td><td>&nbsp</td>&nbsp<td></tr>
-            <tr><td>Password</td>
-            <td>&nbsp&nbsp&nbsp&nbsp:&nbsp&nbsp&nbsp&nbsp</td>
-            <td><input style="width: 150px;height: 30px;" type="password" name=""></td>
-            </tr>
-            <tr><td>&nbsp</td><td>&nbsp</td>&nbsp<td></tr>
-            <tr><td align="center" colspan="3">
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-            <input class="btn btn-success" type="submit" value="Submit" name=""><td></tr>
-            </table> 
-        </div>
-        </form>
-      </div>
-      
-    </div>
-  </div>
- -->
+ 
