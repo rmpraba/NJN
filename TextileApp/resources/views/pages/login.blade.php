@@ -78,13 +78,13 @@
   transition: opacity ease 0.5s;
 } 
 </style>
-<div style="margin-left: 50%;">
+<div style="margin-left: 10%;">
    	<div class="container logincontainer">
 	    <h1>Login to Your Account</h1><br>
 		<form action="/login" method="post">
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
-		<input type="text" name="user" placeholder="Username">
-		<input type="password" name="pass" placeholder="Password">
+		<input required type="text" name="user" placeholder="Username">
+		<input required type="password" name="pass" placeholder="Password">
 		<input type="submit" name="login" value="Login" class="logsubmit">
 		</form>					
 	    <div class="login-help">

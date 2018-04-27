@@ -13,31 +13,25 @@
                 width: 100%;
             }
             #main{
-              height: 100vh;  
-              overflow-y: hidden;
+              height: 110vh;  
             }
 </style>
 <div class="container">
 
-    <header class="row">
+    <header class="row" id="head">
         @include('includes.header')
     </header>
 
     <div id="main" class="row scroll-area">
-
-        <!-- sidebar content -->
-        <div id="sidebar" class="col-md-4" hidden>
-            @include('includes.sidebar')
-        </div>
-
+    
         <!-- main content -->
-        <div id="content" class="col-md-8">
+        <div id="content" class="col-md-11">
             @yield('content')
         </div>
 
     </div>
 
-    <footer class="row">
+    <footer class="row" id="foot">
         @include('includes.footer')
     </footer>
 

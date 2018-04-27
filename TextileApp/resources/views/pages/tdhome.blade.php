@@ -7,7 +7,7 @@
         </div>
         <!-- main content -->
         <div id="content" class="col-md-8">
-            i am the TD
+            Textile Department Home
         </div>
  </div>    
 @stop

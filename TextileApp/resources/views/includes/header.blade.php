@@ -111,12 +111,16 @@
   opacity: 0.6;
   transition: opacity ease 0.5s;
 } 
+/*.outer{
+  position: fixed;
+}*/
 </style>
+<div class="outer">
 <nav class="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
-      <a class="navbar-brand"><img src="../images/logo.png" alt="Logo goes Here"></a>
+      <a class="navbar-brand"><img src="{{asset('img/logo.png')}}" alt="Logo goes Here"></a>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#">Contact us @ 1234567890</a></li>
@@ -140,7 +144,7 @@
       <a class="navbar-brand" href="#">WebSiteName</a>
     </div> -->
     <ul class="nav navbar-nav navbar-center">
-      <li><a href="#">HOME</a></li>
+      <li><a href="/">HOME</a></li>
       <li><a href="#">ABOUT US</a></li>
       <li><a href="#">POLICIES</a></li>
       <li><a href="#">SCHEMES</a></li>
@@ -153,7 +157,7 @@
     </ul>
   </div>
 </nav>
-
+</div>
 <!-- Modal -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;margin-top: 10%;">
     	<div class="modal-dialog">

@@ -7,7 +7,7 @@
         </div>
         <!-- main content -->
         <div id="content" class="col-md-8">
-            i am the TC
+            Training Centre Home
         </div>
  </div>    
 @stop

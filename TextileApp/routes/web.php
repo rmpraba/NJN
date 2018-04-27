@@ -43,14 +43,17 @@ Route::get('tchome', function()
 {
     return View::make('pages.tchome');
 });
-// Route::get('pftarget', function()
-// {
-//     return View::make('tcview.pftarget');
-// });
-// Route::post('/login', function()
+Route::post('/login', 'loginController@login');
+
+Route::get('/pftarget/ajax/{id}','pftargetfetchController@getBatchList');
+Route::get('/pftarget/batchajax/{id}','pftargetfetchController@getBatchInfo');
+Route::get('/pftarget', 'pftargetfetchController@pftargetfetch');
+Route::post('insertpftarget', 'insertpftargetController@insertpf');
+
+Route::get('/viewpftarget', 'viewpftargetfetchController@viewpftargetfetch');
+Route::get('/viewpftarget/ajax/{id}','viewpftargetfetchController@viewgetBatchList');
+Route::get('/viewpftarget/batchajax/{id}','viewpftargetfetchController@viewgetBatchInfo');
+// Route::post('/insertpftarget', function()
 // {
 //     echo "ya its working";
 // });
-Route::get('/pftarget', 'pftargetfetchController@pftargetfetch');
-Route::get('/fetchbatch', 'fetchbatchController@fetchbatch');
-Route::post('/login', 'loginController@login');

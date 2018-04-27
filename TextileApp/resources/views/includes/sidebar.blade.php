@@ -12,7 +12,7 @@
     /*position: fixed;*/
     z-index: 1;
     top: 10%;
-    margin-left: 50%;
+    margin-left: 20%;
     background: #484848;
     overflow-x: hidden;
     padding: 8px 0;
@@ -34,7 +34,8 @@
 }
 </style>
 <div class="sidenav">
-  <a href="#">Create Batch</a>
-  <a href="/pftarget">Physical & Financial Target</a>
+  <a href="#">Create Batch</a>  
   <a href="#">Batch List</a>
+  <a href="/pftarget">Physical & Financial Target</a>
+  <a href="/viewpftarget">View Target</a>
 </div>
