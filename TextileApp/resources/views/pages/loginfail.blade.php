@@ -1,4 +1,4 @@
 @extends('layouts.sidebar')
 @section('content')
-    Login Failed!
+    <h3 style="color: red;">Login Failed!</h3>
 @stop
