@@ -12,7 +12,7 @@
     /*position: fixed;*/
     z-index: 1;
     top: 10%;
-    margin-left: 20%;
+    /*margin-left: 20%;*/
     background: #484848;
     overflow-x: hidden;
     padding: 8px 0;

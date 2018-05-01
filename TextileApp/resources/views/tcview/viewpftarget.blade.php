@@ -9,14 +9,18 @@
     .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #b30000 !important;
     }
+    #viewtargetcontainer{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
 </style>
- <div id="main" class="row">
+ <div class="row" id="viewtargetcontainer">
         <!-- sidebar content -->
-        <div id="sidebar" class="col-md-4">
+        <div id="sidebar" class="col-md-3">
             @include('includes.sidebar')
         </div>
         <!-- main content -->
-        <div id="content" class="col-md-8">
+        <div id="viewtargetcontent" class="col-md-9">
     <center><h1 style="color: #b30000;"> Physical & Financial Target </h1></center>
     <form action="/viewpftarget" method="post">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
